@@ -275,3 +275,12 @@
 
 })(jQuery);
 
+
+document.querySelectorAll('.skill-card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      const skill = card.getAttribute('data-skill');
+      console.log(`${skill} skill hovered!`);
+    });
+  });
+  
+
